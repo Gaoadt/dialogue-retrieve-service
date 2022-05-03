@@ -1,7 +1,7 @@
-from flask import Flask, jsonify, request
-from load import build_service
 import requests
 import numpy as np
+from flask import Flask, jsonify, request
+from src.service import build_service
 
 
 def embed_dialogue(dialogue):
