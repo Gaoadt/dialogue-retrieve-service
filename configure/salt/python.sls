@@ -3,8 +3,8 @@ python39:
     - ppa: deadsnakes/ppa
    pkg.installed:
     - pkgs:
-      - python3.10
-      - python3.10-dev
+      - python3.9
+      - python3.9-dev
 
 python-packages:
    pip.installed:
