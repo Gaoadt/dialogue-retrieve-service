@@ -5,6 +5,10 @@ python39:
     - pkgs:
       - python3.9
       - python3.9-dev
+      - python3.9-venv
+
+"/usr/bin/python3.9 -m ensurepip":
+    cmd.run
 
 python-packages:
    pip.installed:
@@ -18,5 +22,5 @@ python-packages:
           - scikit-learn >= 1.0.2
           - flask >= 2.1.1
           - gdown >= 4.40
-      - bin-env: "/usr/bin/python3.10 -m pip"
+      - bin_env: "/usr/bin/python3.9 -m pip"
 
